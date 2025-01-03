@@ -6,114 +6,7 @@
   margin-top: 10px;
 }
 
-/*** hero image ***/
-
-#hero-image {
-  margin-left: 5px;
-  margin-right: 5px;
-  margin-top: 23px;
-}
-
-@media screen and (min-width: 1200px) {
-  /*** hero image ***/
-  #hero-image {
-    margin-left: 10px;
-    margin-right: 10px;
-    margin-top: 23px;
-  }
-}
-
-/*** about me ***/
-
-#aboutme-frontpage {
-  margin-top: 20px;
-  margin-left: 60px;
-  margin-right: 60px;
-  margin-bottom: 20px;
-}
-
-.frontpage-h1 {
-  font-family: "Playfair Display", serif;
-  font-size: 400%;
-  margin-top: 40px;
-  color: #ae030e;
-}
-
-.frontpage-p {
-  font-size: 130%;
-  line-height: 150%;
-  color: #ae030e;
-  font-family: "Nunito Sans", serif;
-  font-weight: 100;
-}
-
-@media screen and (min-width: 1200px) {
-  /*** about me ***/
-
-  #aboutme-frontpage {
-    margin-top: 20px;
-    margin-left: 60px;
-    margin-right: 60px;
-    margin-bottom: 20px;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-  }
-
-  .front-txt {
-    grid-column: 1/2;
-  }
-
-  .me-pic {
-    grid-column: 2/3;
-    padding-top: 20px;
-  }
-
-  .frontpage-h1 {
-    font-family: "Playfair Display", serif;
-    font-size: 530%;
-    margin-top: 40px;
-    color: #ae030e;
-  }
-
-  .frontpage-p {
-    font-size: 186%;
-    line-height: 150%;
-    color: #ae030e;
-    font-family: "Nunito Sans", serif;
-    font-weight: 100;
-    margin-top: 20px;
-    margin-right: 60px;
-  }
-}
-
-/*** button ***/
-
-.button {
-  margin-top: 20px;
-  margin-bottom: 20px;
-}
-
-.custom-button {
-  display: inline-block;
-  padding: 10px 20px;
-  font-family: "Playfair Display", serif;
-  font-style: italic;
-  font-weight: bolder;
-  font-size: 20px;
-  color: #ae030e;
-  border: 2px solid #ae030e;
-  border-radius: 30px;
-  background-color: #fefdee;
-  text-align: center;
-  text-decoration: none;
-  cursor: pointer;
-  transition: all 0.3s ease;
-}
-
-.custom-button:hover {
-  background-color: #ae030e;
-  color: #fefdee;
-}
+/** buttons **/
 
 .custom-button1 {
   display: inline-block;
@@ -137,58 +30,7 @@
   color: #fefdee;
 }
 
-.custom-button-large {
-  display: inline-block;
-  padding: 10px 40px;
-  font-family: "Playfair Display", serif;
-  font-style: italic;
-  font-weight: bolder;
-  font-size: 35px;
-  color: #ae030e;
-  border: 2px solid #ae030e;
-  border-radius: 50px;
-  background-color: #fefdee;
-  text-align: center;
-  text-decoration: none;
-  cursor: pointer;
-  transition: all 0.3s ease;
-}
-
-.custom-button-large:hover {
-  background-color: #ae030e;
-  color: #fefdee;
-}
-
 @media screen and (min-width: 1200px) {
-  /** button **/
-
-  .button {
-    margin-top: 20px;
-    margin-bottom: 20px;
-  }
-
-  .custom-button {
-    display: inline-block;
-    padding: 10px 50px;
-    font-family: "Playfair Display", serif;
-    font-style: italic;
-    font-weight: bolder;
-    font-size: 40px;
-    color: #ae030e;
-    border: 2px solid #ae030e;
-    border-radius: 60px;
-    background-color: #fefdee;
-    text-align: center;
-    text-decoration: none;
-    cursor: pointer;
-    transition: all 0.3s ease;
-  }
-
-  .custom-button:hover {
-    background-color: #ae030e;
-    color: #fefdee;
-  }
-
   .custom-button1 {
     display: inline-block;
     padding: 10px 30px;
@@ -207,28 +49,6 @@
   }
 
   .custom-button1:hover {
-    background-color: #ae030e;
-    color: #fefdee;
-  }
-
-  .custom-button-large {
-    display: inline-block;
-    padding: 10px 60px;
-    font-family: "Playfair Display", serif;
-    font-style: italic;
-    font-weight: bolder;
-    font-size: 40px;
-    color: #ae030e;
-    border: 2px solid #ae030e;
-    border-radius: 60px;
-    background-color: #fefdee;
-    text-align: center;
-    text-decoration: none;
-    cursor: pointer;
-    transition: all 0.3s ease;
-  }
-
-  .custom-button-large:hover {
     background-color: #ae030e;
     color: #fefdee;
   }
@@ -356,20 +176,6 @@
     display: flex;
     justify-content: center;
     margin-bottom: 30px;
-  }
-}
-
-/** see all works button **/
-
-.button-project-see-all {
-  display: flex;
-  justify-content: center;
-}
-
-@media screen and (min-width: 1200px) {
-  .button-project-see-all {
-    display: flex;
-    justify-content: center;
   }
 }
 

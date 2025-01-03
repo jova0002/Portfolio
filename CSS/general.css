@@ -1,0 +1,271 @@
+/**** RESET ****/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+img {
+  width: 100%;
+  max-width: 1400px;
+}
+
+/***** colours and fonts 
+
+red - #AE030E
+neon yellow -  #F9F93E
+green - #B0AE33
+beige - #F5EBD4
+off white - #FEFDEE
+
+
+Large font family: 
+
+.playfair-display-<uniquifier> {
+  font-family: "Playfair Display", serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+}
+
+.nunito-sans-<uniquifier> {
+  font-family: "Nunito Sans", serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100,
+    "YTLC" 500;
+}
+
+
+*****/
+
+/*** body ***/
+
+body {
+  background-color: #fefdee;
+}
+
+@media screen and (min-width: 800px) {
+  body {
+    background-color: #fefdee;
+    margin-left: 120px;
+    margin-right: 120px;
+  }
+}
+
+/*** main ***/
+.line-divider {
+  border: none;
+  height: 1px;
+  background-color: #b0ae33;
+  /*   margin-left: 60px;
+  margin-right: 60px; */
+}
+
+/******* logo header *******/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  /*  position: sticky; */
+  top: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 7px;
+  background-color: #fefdee;
+  z-index: 1000;
+}
+
+.logo img {
+  width: 70px;
+  height: 70px;
+  margin-left: 60px;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  margin-right: 60px;
+}
+
+.menu {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.menu li {
+  margin-right: 20px;
+}
+
+.menu li:last-child {
+  margin-right: 0;
+}
+
+.menu a {
+  display: block;
+  color: #ae030e;
+  text-decoration: none;
+  transition: color 0.3s;
+  text-align: end;
+  font-family: "Playfair Display", serif; /*  need to change font */
+  text-transform: uppercase;
+  font-weight: 800;
+  padding-top: 43px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.menu a:hover {
+  color: #b0ae33;
+}
+
+.burger {
+  width: 30px;
+  height: 20px;
+  cursor: pointer;
+}
+
+.burger .line {
+  width: 100%;
+  height: 2px;
+  background-color: #ae030e;
+  margin-bottom: 5px;
+  transition: 0.2s linear;
+}
+.burger {
+  display: none;
+}
+
+.nav-link {
+  text-decoration: none;
+  font-size: 18px;
+  color: #ae030e;
+  padding-bottom: 5px;
+  position: relative;
+}
+
+.nav-link.active::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 3px;
+  border-radius: 60px;
+  background-color: #f9f93e;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+@media screen and (max-width: 1200px) {
+  .menu {
+    display: none;
+  }
+  .burger {
+    display: block;
+  }
+  .burger.active .line:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 5px);
+    transition: 0.2s linear;
+  }
+
+  .burger.active .line:nth-child(2) {
+    opacity: 0;
+    transition: 0.15s linear;
+  }
+
+  .burger.active .line:nth-child(3) {
+    transform: rotate(-45deg) translate(5px, -5px);
+    transition: 0.2s linear;
+  }
+
+  nav.active .menu {
+    display: block;
+    background-color: #fefdee;
+    position: absolute;
+    top: 89px;
+    left: 0;
+    width: 100%;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+    z-index: 1;
+    padding-bottom: 20px;
+  }
+
+  nav.active .menu li {
+    margin: 10px 20px;
+  }
+
+  nav.active .menu a {
+    font-size: 24px;
+  }
+  .nav-link {
+    text-decoration: none;
+    font-size: 18px;
+    color: #ae030e;
+    padding-bottom: 5px;
+    position: relative;
+  }
+
+  .nav-link.active::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 3px;
+    border-radius: 60px;
+    background-color: #f9f93e;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+  }
+}
+
+/*** footer ***/
+
+.footer {
+  text-align: center;
+  padding: 50px;
+  background-color: #fefdee;
+  color: #ae030e;
+}
+
+.footer-divider {
+  border: none;
+  height: 1px;
+  background-color: #b0ae33;
+  width: 80%;
+  margin: 0 auto 40px;
+}
+
+.footer-icons {
+  margin: 10px 0;
+}
+
+.icon-link {
+  margin: 0 10px;
+  color: #ae030e;
+  font-size: 24px;
+  text-decoration: none;
+  transition: transform 0.3s, color 0.3s; /** smooth hover **/
+}
+
+.icon-link:hover {
+  color: #b0ae33;
+  transform: scale(1.2); /** slightly enlarges hover **/
+}
+
+.footer-text {
+  font-size: 12px;
+  color: #ae030e;
+  margin-top: 10px;
+  font-family: "Nunito Sans", serif;
+  font-weight: 100;
+}
