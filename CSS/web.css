@@ -203,6 +203,17 @@
 
 .web-colours {
   margin-top: 30px;
+  transition: transform 0.3s ease;
+  margin-left: 0px;
+  margin-right: 0px;
+}
+
+.web-colours:hover {
+  transform: scale(1.1); /* Slightly enlarge the image */
+}
+
+.txt-pic-v1 {
+  margin-bottom: 20px;
 }
 
 @media screen and (min-width: 1200px) {
@@ -228,6 +239,8 @@
   .web-colours {
     width: 75%;
     margin-left: 128px;
+    margin-left: 136px;
+    margin-right: 40px;
   }
 }
 

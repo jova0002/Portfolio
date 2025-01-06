@@ -355,14 +355,6 @@
   margin-bottom: 40px;
 }
 
-.topic-pics {
-  transition: transform 0.3s ease;
-}
-
-.topic-pics:hover {
-  transform: scale(1.1); /* Slightly enlarge the image */
-}
-
 @media screen and (min-width: 900px) {
   /** projects **/
 
@@ -474,4 +466,28 @@
 .icon-link:hover {
   color: #b0ae33;
   transform: scale(1.2); /** slightly enlarges hover **/
+}
+
+/** lottie **/
+
+.lottie {
+  width: 100%;
+  padding-right: 0px;
+  padding-left: 0px;
+}
+
+@media screen and (min-width: 900px) {
+  .lottie {
+    width: 100%;
+    padding-right: 70px;
+    padding-left: 70px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .lottie {
+    width: 100%;
+    padding-right: 60px;
+    padding-left: 60px;
+  }
 }

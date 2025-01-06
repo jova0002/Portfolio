@@ -395,10 +395,14 @@
 .normal-p-2 {
   font-size: 114%;
   line-height: 150%;
-  color: #001aff;
+  color: #ae030e;
   font-family: "Nunito Sans", serif;
   font-weight: 100;
   margin-top: 35px;
+}
+
+.passionsite-results-pic {
+  margin-top: 30px;
 }
 
 @media screen and (min-width: 900px) {

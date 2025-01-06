@@ -436,7 +436,7 @@ textarea {
     width: 78%; /* Make it responsive */
     height: auto;
     margin-left: 119px;
-    margin-top: 0px;
+    margin-top: 15px;
   }
 }
 
@@ -546,23 +546,24 @@ element {
 
 /** hover **/
 
-/* .doodle-moi {
+.doodle-moi {
   transition: transform 0.3s ease;
 }
 
 .doodle-moi:hover {
   transform: scale(1.1); /* Slightly enlarge the image */
+}
 
 /** star pic **/
 
 .star-pic {
   position: absolute; /* Place the image relative to the container */
   top: 48%; /* Center the image vertically */
-  left: 15%; /* Center the image horizontally */
+  left: 19%; /* Center the image horizontally */
   transform: translate(-50%, -50%); /* Align the center of the image with the center of the container */
   width: 100px; /* Set image size (adjust as needed) */
   z-index: -1; /* Push the image behind the text */
-  padding-bottom: 470px;
+  padding-bottom: 420px;
 }
 
 @media screen and (min-width: 600px) {
@@ -570,7 +571,7 @@ element {
     top: 48%; /* Center the image vertically */
     left: 26%; /* Center the image horizontally */
     width: 100px; /* Set image size (adjust as needed) */
-    padding-bottom: 82px;
+    padding-bottom: 400px;
   }
 }
 
@@ -579,15 +580,15 @@ element {
     top: 60%; /* Center the image vertically */
     left: 20%; /* Center the image horizontally */
     width: 100px; /* Set image size (adjust as needed) */
-    padding-bottom: 270px;
+    padding-bottom: 480px;
   }
 }
 
 @media screen and (min-width: 1200px) {
   .star-pic {
-    top: 62%; /* Center the image vertically */
+    top: 61%; /* Center the image vertically */
     left: 14%; /* Center the image horizontally */
     width: 132px; /* Set image size (adjust as needed) */
-    padding-bottom: 270px;
+    padding-bottom: 470px;
   }
 }

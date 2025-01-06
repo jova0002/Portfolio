@@ -347,7 +347,9 @@
   }
 
   .wireframes-prototype-pic {
-    width: 100%;
+    width: 78%;
+    margin-left: 120px;
+    margin-right: 120px;
   }
 }
 
@@ -382,6 +384,11 @@
 .logo-border {
   border: 1px solid #000000;
   display: inline-block;
+  transition: transform 0.3s ease;
+}
+
+.logo-border:hover {
+  transform: scale(1.1); /* Slightly enlarge the image */
 }
 
 @media screen and (min-width: 900px) {
@@ -448,6 +455,10 @@
   margin-bottom: 30px;
 }
 
+.cirle-txt {
+  margin-bottom: 20px;
+}
+
 @media screen and (min-width: 500px) {
   .circles-code {
     display: grid;
@@ -504,8 +515,8 @@
 /** results section **/
 
 .ny-web-pic {
-  margin-top: 30px;
-  margin-bottom: 30px;
+  margin-top: 50px;
+  margin-bottom: 50px;
 }
 
 @media screen and (min-width: 900px) {
