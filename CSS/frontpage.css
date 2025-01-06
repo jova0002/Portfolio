@@ -14,7 +14,7 @@
   margin-top: 23px;
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 900px) {
   /*** hero image ***/
   #hero-image {
     margin-left: 10px;
@@ -47,42 +47,74 @@
   font-weight: 100;
 }
 
-@media screen and (min-width: 1200px) {
+.me-pic {
+  margin-top: 20px;
+}
+
+@media screen and (min-width: 600px) {
   /*** about me ***/
 
   #aboutme-frontpage {
-    margin-top: 20px;
+    margin-top: 40px;
     margin-left: 60px;
     margin-right: 60px;
-    margin-bottom: 20px;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-  }
-
-  .front-txt {
-    grid-column: 1/2;
+    margin-bottom: 60px;
+    display: flex;
+    flex-direction: row;
   }
 
   .me-pic {
-    grid-column: 2/3;
-    padding-top: 20px;
+    padding-top: 40px;
+    width: 120%;
+    padding-right: 20px;
   }
 
   .frontpage-h1 {
     font-family: "Playfair Display", serif;
-    font-size: 530%;
-    margin-top: 40px;
+    font-size: 300%;
+    margin-top: 0px;
     color: #ae030e;
   }
 
   .frontpage-p {
-    font-size: 186%;
+    font-size: 120%;
     line-height: 150%;
     color: #ae030e;
     font-family: "Nunito Sans", serif;
     font-weight: 100;
-    margin-top: 20px;
+    margin-top: 30px;
     margin-right: 60px;
+  }
+}
+
+@media screen and (min-width: 900px) {
+  .me-pic {
+    padding-top: 40px;
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .frontpage-h1 {
+    font-family: "Playfair Display", serif;
+    font-size: 400%;
+    margin-top: 0px;
+    color: #ae030e;
+  }
+
+  .frontpage-p {
+    font-size: 160%;
+    line-height: 150%;
+    color: #ae030e;
+    font-family: "Nunito Sans", serif;
+    font-weight: 100;
+    margin-top: 30px;
+    margin-inline-end: 140px;
+  }
+
+  .me-pic {
+    padding-top: 20px;
+    width: 100%;
   }
 }
 
@@ -159,21 +191,45 @@
   color: #fefdee;
 }
 
+@media screen and (min-width: 600px) {
+  .custom-button {
+    display: inline-block;
+    padding: 10px 20px;
+    font-family: "Playfair Display", serif;
+    font-style: italic;
+    font-weight: bolder;
+    font-size: 20px;
+    color: #ae030e;
+    border: 2px solid #ae030e;
+    border-radius: 30px;
+    background-color: #fefdee;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+
+  .custom-button:hover {
+    background-color: #ae030e;
+    color: #fefdee;
+  }
+}
+
 @media screen and (min-width: 1200px) {
   /** button **/
 
   .button {
-    margin-top: 20px;
+    margin-top: 27px;
     margin-bottom: 20px;
   }
 
   .custom-button {
     display: inline-block;
-    padding: 10px 50px;
+    padding: 10px 40px;
     font-family: "Playfair Display", serif;
     font-style: italic;
     font-weight: bolder;
-    font-size: 40px;
+    font-size: 33px;
     color: #ae030e;
     border: 2px solid #ae030e;
     border-radius: 60px;
@@ -294,7 +350,7 @@
   margin-bottom: 40px;
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 900px) {
   /** projects **/
 
   .projects-txt {
@@ -366,7 +422,7 @@
   justify-content: center;
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 900px) {
   .button-project-see-all {
     display: flex;
     justify-content: center;
@@ -405,12 +461,4 @@
 .icon-link:hover {
   color: #b0ae33;
   transform: scale(1.2); /** slightly enlarges hover **/
-}
-
-.footer-text {
-  font-size: 12px;
-  color: #ae030e;
-  margin-top: 10px;
-  font-family: "Nunito Sans", serif;
-  font-weight: 100;
 }

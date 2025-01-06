@@ -2,6 +2,9 @@
   margin-top: 50px;
   margin-left: 60px;
   margin-right: 60px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 /** line **/
@@ -16,6 +19,16 @@
   border: none;
   height: 1px;
   background-color: #b0ae33;
+}
+
+@media screen and (min-width: 1200px) {
+  .line-divider-title {
+    border: none;
+    height: 1px;
+    background-color: #b0ae33;
+    margin-left: 120px;
+    margin-right: 120px;
+  }
 }
 
 /** project top part **/
@@ -45,7 +58,7 @@
 }
 
 .web-p-tools {
-  font-size: 95%;
+  font-size: 114%;
   line-height: 150%;
   color: #ae030e;
   font-family: "Nunito Sans", serif;
@@ -63,6 +76,24 @@
   margin-top: 20px;
 }
 
+.h2-web-topic-2 {
+  font-family: "Nunito Sans", serif;
+  font-weight: 800;
+  padding-top: 20px;
+  color: #ae030e;
+  margin-bottom: 10px;
+  margin-top: 50px;
+}
+
+.h2-web-topic-title {
+  font-family: "Nunito Sans", serif;
+  font-weight: 800;
+  padding-top: 20px;
+  color: #ae030e;
+  margin-bottom: 10px;
+  margin-top: 20px;
+}
+
 .h2-web-goal {
   font-family: "Nunito Sans", serif;
   font-weight: 800;
@@ -72,13 +103,31 @@
   margin-top: 20px;
 }
 
-.web-p {
-  font-size: 95%;
+.normal-p {
+  font-size: 114%;
   line-height: 150%;
   color: #ae030e;
   font-family: "Nunito Sans", serif;
   font-weight: 100;
   margin-top: 10px;
+}
+
+.h2-normal {
+  font-family: "Nunito Sans", serif;
+  font-weight: 800;
+  color: #ae030e;
+  margin-bottom: 10px;
+  margin-top: 40px;
+}
+
+@media screen and (min-width: 1200px) {
+  .h2-normal {
+    font-family: "Nunito Sans", serif;
+    font-weight: 800;
+    color: #ae030e;
+    margin-bottom: 10px;
+    margin-top: 0;
+  }
 }
 
 /** button on this page **/
@@ -120,8 +169,8 @@
     margin-bottom: 60px;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    margin-left: 80px;
-    margin-right: 80px;
+    margin-left: 120px;
+    margin-right: 120px;
   }
 }
 
@@ -130,24 +179,243 @@
 @media screen and (min-width: 1200px) {
   .top-p1 {
     grid-column: 1/2;
+    margin-right: 30px;
   }
 
   .top-p2 {
     grid-column: 2/3;
+    margin-left: 30px;
   }
 }
 
-/** text-pic **/
+/** txt-pic-v1 **/
 
-.h2-web-normal {
+.h2-normal {
   font-family: "Nunito Sans", serif;
   font-weight: 800;
-  padding-top: 20px;
   color: #ae030e;
   margin-bottom: 10px;
-  margin-top: 20px;
 }
 
 .grid-1-1-pic {
   margin-top: 40px;
+}
+
+.web-colours {
+  margin-top: 30px;
+}
+
+@media screen and (min-width: 1200px) {
+  .txt-pic-v1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-left: 120px;
+    margin-right: 120px;
+  }
+
+  .grid-1-1-pic {
+    grid-column: 2/3;
+    margin-left: 30px;
+  }
+
+  .grid-1-1-txt {
+    grid-column: 1/2;
+    grid-row: 1/2;
+    margin-right: 30px;
+    margin-top: 40px;
+  }
+
+  .web-colours {
+    width: 75%;
+    margin-left: 128px;
+  }
+}
+
+/** txt-2pics **/
+
+.txt-2pics {
+  margin-bottom: 35px;
+}
+
+.grid-2-2-pic-desktop {
+  margin-top: 30px;
+}
+
+.grid-2-3-pic-mobile {
+  margin-top: 40px;
+}
+
+@media screen and (min-width: 900px) {
+  .txt-2pics {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    margin-bottom: 35px;
+  }
+  .grid-2-2-txt {
+    grid-column: 2/3;
+  }
+
+  .grid-2-2-pic-desktop {
+    display: grid;
+    grid-template-columns: 1fr;
+    width: 100%;
+    grid-column: 1/3;
+  }
+
+  .grid-2-3-pic-mobile {
+    width: 100%;
+    grid-column: 1/2;
+    grid-row: 1/2;
+    margin-top: 50px;
+    padding-right: 20px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .txt-2pics {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-left: 120px;
+    margin-right: 120px;
+    margin-bottom: 35px;
+  }
+  .grid-2-2-txt {
+    grid-column: 2/3;
+    margin-left: 30px;
+    margin-top: 40px;
+  }
+
+  .grid-2-2-pic-desktop {
+    grid-column: 2/3;
+  }
+
+  .grid-2-3-pic-mobile {
+    grid-column: 1/2;
+    grid-row: 1/2;
+    margin-right: 30px;
+  }
+}
+
+/** code sections **/
+
+.code-sec-1 {
+  margin-top: 40px;
+  margin-bottom: 50px;
+}
+.jscode-pic {
+  margin-bottom: -20px;
+}
+
+.coding-section {
+  margin-bottom: 40px;
+}
+
+.gallerycode-txt {
+  margin-top: -20px;
+}
+
+@media screen and (min-width: 900px) {
+  .coding-section {
+    margin-bottom: 60px;
+  }
+
+  .code-sec-1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    margin-bottom: 35px;
+  }
+
+  .gallerycode-pic {
+    grid-column: 1/2;
+    margin-right: 30px;
+  }
+
+  .gallerycode-txt {
+    grid-column: 2/3;
+    grid-row: 1/2;
+    margin-left: 30px;
+    margin-top: -50px;
+  }
+
+  .code-sec-2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-bottom: 35px;
+  }
+
+  .jscode-pic {
+    grid-column: 2/3;
+    margin-left: 30px;
+  }
+
+  .jscode-txt {
+    grid-column: 1/2;
+    grid-row: 1/2;
+    margin-right: 30px;
+    margin-top: -50px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .code-sec-1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-left: 120px;
+    margin-right: 120px;
+    margin-bottom: 35px;
+  }
+
+  .code-sec-2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-left: 120px;
+    margin-right: 120px;
+    margin-bottom: 35px;
+  }
+
+  .gallerycode-txt {
+    grid-column: 2/3;
+    grid-row: 1/2;
+    margin-left: 30px;
+    margin-top: -0.5px;
+  }
+  .jscode-txt {
+    grid-column: 1/2;
+    grid-row: 1/2;
+    margin-right: 30px;
+    margin-top: 0px;
+  }
+}
+
+/** results section **/
+
+.results {
+  margin-bottom: 30px;
+  margin-top: 30px;
+}
+
+.learning-solutions-txt {
+  margin-bottom: 30px;
+}
+
+@media screen and (min-width: 1200px) {
+  .results {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-left: 120px;
+    margin-right: 120px;
+    margin-bottom: 35px;
+  }
+  .learning-solutions-pic {
+    grid-column: 2/3;
+    margin-left: 30px;
+  }
+
+  .learning-solutions-txt {
+    grid-column: 1/2;
+    grid-row: 1/2;
+    margin-right: 30px;
+  }
 }

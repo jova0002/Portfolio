@@ -17,7 +17,7 @@
 
 .frontpage-h1 {
   font-family: "Playfair Display", serif;
-  font-size: 370%;
+  font-size: 310%;
   margin-top: 40px;
   color: #ae030e;
 }
@@ -40,11 +40,11 @@
   margin-top: 30px;
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 900px) {
   /*** about me ***/
 
   #aboutme-frontpage {
-    margin-top: 20px;
+    margin-top: 60px;
     margin-left: 60px;
     margin-right: 60px;
     margin-bottom: 20px;
@@ -54,16 +54,40 @@
 
   .front-txt {
     grid-column: 1/2;
-  }
-
-  .me-pic {
-    grid-column: 2/3;
-    padding-top: 20px;
+    margin-top: -40px;
   }
 
   .frontpage-h1 {
     font-family: "Playfair Display", serif;
-    font-size: 530%;
+    font-size: 310%;
+    margin-top: 40px;
+    color: #ae030e;
+  }
+
+  .frontpage-p {
+    font-size: 80%;
+    line-height: 150%;
+    color: #ae030e;
+    font-family: "Nunito Sans", serif;
+    font-weight: 100;
+    margin-top: 20px;
+    margin-right: 60px;
+  }
+
+  .frontpage-p1 {
+    font-size: 80%;
+    line-height: 150%;
+    color: #ae030e;
+    font-family: "Nunito Sans", serif;
+    font-weight: 100;
+    margin-top: 30px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .frontpage-h1 {
+    font-family: "Playfair Display", serif;
+    font-size: 460%;
     margin-top: 40px;
     color: #ae030e;
   }
@@ -144,74 +168,9 @@ p {
   font-weight: 100;
 }
 
-/** skills **/
-
-.h2-skills {
-  font-family: "Nunito Sans", serif;
-  font-weight: 800;
-  padding-top: 20px;
-  color: #ae030e;
-  margin-bottom: 10px;
-}
-
-.container {
-  position: absolute;
-  font-family: "Nunito Sans", serif;
-  width: 73.5%;
-}
-
-.skill-container {
-  width: 100%;
-  background-color: #f5ebd4;
-  margin-bottom: 30px;
-}
-
-.skill {
-  text-align: right;
-  padding-top: 10px;
-  padding-bottom: 2px;
-  color: #f5ebd4;
-}
-
-.htmlcss {
-  width: 20%;
-  background-color: #ae030e;
-}
-
-.ai {
-  width: 45%;
-  background-color: #ae030e;
-}
-
-.procreate {
-  width: 70%;
-  background-color: #ae030e;
-}
-
-.JavaScript {
-  width: 30%;
-  background-color: #ae030e;
-}
-
-.aae {
-  width: 30%;
-  background-color: #ae030e;
-}
-
-.photographyvideography {
-  width: 70%;
-  background-color: #ae030e;
-}
-
-.p-skills {
-  font-family: "Nunito Sans", serif;
-  color: #ae030e;
-  font-size: small;
-}
-
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 900px) {
   .container {
-    width: 75%;
+    width: 100%;
   }
 
   .cv-skills {
@@ -268,77 +227,13 @@ p {
     margin-top: 20px;
     font-weight: 100;
   }
-
-  /** skills **/
-
-  .h2-skills {
-    font-family: "Nunito Sans", serif;
-    font-weight: 800;
-    padding-top: 45px;
-    color: #ae030e;
-    margin-bottom: -5px;
-  }
-
-  .skills-box {
-    margin-left: 40px;
-  }
-
-  .container {
-    position: absolute;
-    font-family: "Nunito Sans", serif;
-    width: 34.7%;
-    margin-top: 50px;
-  }
-
-  .skill-container {
-    width: 100%;
-    background-color: #f5ebd4;
-  }
-
-  .skill {
-    text-align: right;
-    padding-top: 18px;
-    padding-bottom: 2px;
-    color: #f5ebd4;
-  }
-
-  .html {
-    width: 20%;
-    background-color: #ae030e;
-  }
-
-  .css {
-    width: 50%;
-    background-color: #ae030e;
-  }
-
-  .ai {
-    width: 45%;
-    background-color: #ae030e;
-  }
-
-  .procreate {
-    width: 70%;
-    background-color: #ae030e;
-  }
-
-  .JavaScript {
-    width: 30%;
-    background-color: #ae030e;
-  }
-
-  .p-skills {
-    font-family: "Nunito Sans", serif;
-    color: #ae030e;
-    margin-top: -15px;
-  }
 }
 
 /** contact **/
 
 .contact {
   width: 100%;
-  margin-top: 400px;
+  margin-top: 50px;
 }
 
 input {
@@ -421,9 +316,19 @@ textarea {
   margin-top: -20px;
   display: flex;
   flex-direction: column;
+  justify-content: center;
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 600px) {
+  .contact-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 33%;
+  }
+}
+
+@media screen and (min-width: 900px) {
   .contact {
     width: 100%;
     margin-top: 20px;
@@ -446,25 +351,157 @@ textarea {
   input {
     border-radius: 10px;
     border-width: 1px;
-    height: 33px;
-    width: 273px;
+    height: 46px;
+    width: 296px;
     border-color: #ae030e;
   }
 
   .contact-form {
-    margin-left: 24%;
-    margin-top: -40px;
+    margin-left: 20%;
   }
 
   .me-doodle {
-    margin-left: -100px;
+    margin-left: -50px;
   }
 
   textarea {
     border-radius: 10px;
     border-width: 1px;
     height: 100px;
-    width: 273px;
+    width: 296px;
     border-color: #ae030e;
   }
+}
+
+/** lottie **/
+
+/* Ensure the container sets relative positioning */
+.image-container {
+  position: relative;
+  display: inline-block; /* Keeps the container the size of the image */
+}
+
+/* Style the background image */
+.background-image {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%; /* Make it responsive */
+  height: auto;
+  margin-top: 40px;
+}
+
+@media screen and (min-width: 600px) {
+  .background-image {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%; /* Make it responsive */
+    height: auto;
+    margin-top: 40px;
+    padding-left: 120px;
+    padding-right: 120px;
+  }
+}
+
+@media screen and (min-width: 900px) {
+  .image-container {
+    position: relative;
+  }
+
+  .background-image {
+    display: block;
+    width: 100%; /* Make it responsive */
+    height: auto;
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .background-image {
+    display: block;
+    width: 78%; /* Make it responsive */
+    height: auto;
+    margin-left: 119px;
+    margin-top: 0px;
+  }
+}
+
+/** skills bars **/
+
+.h2-skills {
+  font-family: "Nunito Sans", serif;
+  font-weight: 800;
+  padding-top: 20px;
+  color: #ae030e;
+  margin-bottom: 10px;
+}
+
+.p-skills {
+  font-family: "Nunito Sans", serif;
+  color: #ae030e;
+  font-size: small;
+}
+
+@media screen and (min-width: 900px) {
+  .h2-skills {
+    font-family: "Nunito Sans", serif;
+    font-weight: 800;
+    padding-top: 45px;
+    color: #ae030e;
+  }
+
+  .p-skills {
+    font-family: "Nunito Sans", serif;
+    color: #ae030e;
+  }
+}
+
+/** chatgpt slide bar **/
+
+.skill-container {
+  width: 100%;
+  background-color: #f5ebd4;
+  margin-bottom: 20px;
+  position: relative;
+  overflow: hidden; /* keeps animation tidy and smoothe **/
+}
+
+.skill {
+  height: 20px;
+  background-color: #ae030e;
+  width: 0%; /** start animation at 0% **/
+  transition: width 1.5s ease-in-out; /** to understand the animation happening **/
+}
+
+.skill.htmlcss {
+  --target-width: 50%;
+}
+
+.skill.procreate {
+  --target-width: 70%;
+}
+
+.skill.ai {
+  --target-width: 45%;
+}
+
+.skill.JavaScript {
+  --target-width: 30%;
+}
+
+.skill.aae {
+  --target-width: 20%;
+}
+
+.skill.photographyvideography {
+  --target-width: 35%;
+}
+
+/** trigger animation **/
+.skill-container.is-visible .skill {
+  width: var(--target-width);
 }

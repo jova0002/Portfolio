@@ -48,7 +48,7 @@ body {
   background-color: #fefdee;
 }
 
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 700px) {
   body {
     background-color: #fefdee;
     margin-left: 120px;
@@ -85,9 +85,10 @@ header {
 }
 
 .logo img {
-  width: 70px;
-  height: 70px;
+  width: 92px;
+  height: 92px;
   margin-left: 60px;
+  margin-bottom: -12px;
 }
 
 nav {
@@ -166,7 +167,7 @@ nav {
   left: 0;
 }
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 900px) {
   .menu {
     display: none;
   }
@@ -213,6 +214,7 @@ nav {
     color: #ae030e;
     padding-bottom: 5px;
     position: relative;
+    display: inline;
   }
 
   .nav-link.active::after {
@@ -221,10 +223,16 @@ nav {
     width: 100%;
     height: 3px;
     border-radius: 60px;
-    background-color: #f9f93e;
+    background-color: #0000ff;
     position: absolute;
     bottom: 0;
     left: 0;
+  }
+
+  .logo img {
+    width: 70px;
+    height: 70px;
+    margin-left: 60px;
   }
 }
 
@@ -268,4 +276,155 @@ nav {
   margin-top: 10px;
   font-family: "Nunito Sans", serif;
   font-weight: 100;
+}
+
+/*** footer ***/
+
+.footer {
+  text-align: center;
+  padding: 50px;
+  background-color: #fefdee;
+  color: #ae030e;
+}
+
+.footer-divider {
+  border: none;
+  height: 1px;
+  background-color: #b0ae33;
+  width: 80%;
+  margin: 0 auto 40px;
+}
+
+.footer-icons {
+  margin: 10px 0;
+}
+
+.icon-link {
+  margin: 0 10px;
+  color: #ae030e;
+  font-size: 24px;
+  text-decoration: none;
+  transition: transform 0.3s, color 0.3s; /** smooth hover **/
+}
+
+.icon-link:hover {
+  color: #b0ae33;
+  transform: scale(1.2); /** slightly enlarges hover **/
+}
+
+/** footer text **/
+
+.footer-text {
+  font-size: 11px;
+  color: #ae030e;
+  margin-top: 42px;
+  font-family: "Nunito Sans", serif;
+  font-weight: 100;
+}
+
+@media screen and (min-width: 900px) {
+  .footer-text {
+    font-size: 12px;
+    color: #ae030e;
+    margin-top: 42px;
+    font-family: "Nunito Sans", serif;
+    font-weight: 100;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .footer-text {
+    font-size: 15px;
+    color: #ae030e;
+    margin-top: 30px;
+    font-family: "Nunito Sans", serif;
+    font-weight: 100;
+  }
+}
+
+/** footer button **/
+
+.custom-button-bottom {
+  display: initial;
+  padding: 21px 14px;
+  font-family: "Nunito Sans", serif;
+  font-style: italic;
+  font-weight: 100;
+  font-size: 10px;
+  color: #ae030e;
+  border: 1px solid #ae030e;
+  border-radius: 81px;
+  background-color: #fefdee;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.custom-button-bottom:hover {
+  background-color: #ae030e;
+  color: #fefdee;
+}
+
+.button-project-bottom {
+  margin-left: 230px;
+  margin-top: -30px;
+}
+
+@media screen and (min-width: 600px) {
+  .custom-button-bottom {
+    display: initial;
+    padding: 25px 14px;
+    font-family: "Nunito Sans", serif;
+    font-style: italic;
+    font-weight: 100;
+    font-size: 14px;
+    color: #ae030e;
+    border: 1px solid #ae030e;
+    border-radius: 81px;
+    background-color: #fefdee;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+
+  .custom-button-bottom:hover {
+    background-color: #ae030e;
+    color: #fefdee;
+  }
+
+  .button-project-bottom {
+    margin-left: 267px;
+    margin-top: -34px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .custom-button-bottom {
+    display: initial;
+    padding: 31px 14px;
+    font-family: "Nunito Sans", serif;
+    font-style: italic;
+    font-weight: 100;
+    font-size: 22px;
+    color: #ae030e;
+    border: 1px solid #ae030e;
+    border-radius: 81px;
+    background-color: #fefdee;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+
+  .custom-button-bottom:hover {
+    background-color: #ae030e;
+    color: #fefdee;
+  }
+
+  .button-project-bottom {
+    margin-left: 500px;
+    margin-top: -14px;
+  }
 }

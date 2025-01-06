@@ -1,0 +1,87 @@
+/** lottie **/
+/* 
+/* Ensure the container sets relative positioning */
+.image-container {
+  position: relative;
+  display: inline-block; /* Keeps the container the size of the image */
+}
+
+/* Style the background image */
+.background-image {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%; /* Make it responsive */
+  height: auto;
+  margin-top: 40px;
+}
+
+.lottie-overlay {
+  width: 70px;
+  height: 70px;
+  top: 10px;
+  right: 10px;
+}
+
+.lottie-overlay {
+  position: absolute; /* Position relative to the container */
+  top: 0; /* Align to the top edge */
+  right: 0; /* Align to the right edge */
+  width: 100px; /* Set the size of the animation */
+  height: 100px;
+  pointer-events: none; /* Prevent the Lottie from blocking clicks on the image */
+}
+
+.lottie-overlay {
+  bottom: 245px;
+  right: -30px;
+  top: auto; /** remove top allignment **/
+}
+
+.lottie-overlay {
+  width: 120px;
+  height: 120px;
+}
+
+@media screen and (min-width: 900px) {
+  .image-container {
+    position: relative;
+    display: inline-block; /* Keeps the container the size of the image */
+  }
+
+  /* Style the background image */
+  .background-image {
+    display: block;
+    width: 78%; /* Make it responsive */
+    height: auto;
+    margin-left: 119px;
+  }
+
+  .lottie-overlay {
+    width: 70px;
+    height: 70px;
+    top: 10px;
+    right: 10px;
+  }
+
+  .lottie-overlay {
+    position: absolute; /* Position relative to the container */
+    top: 0; /* Align to the top edge */
+    right: 0; /* Align to the right edge */
+    width: 100px; /* Set the size of the animation */
+    height: 100px;
+    pointer-events: none; /* Prevent the Lottie from blocking clicks on the image */
+  }
+
+  .lottie-overlay {
+    bottom: 380px;
+    right: -19px;
+    top: auto; /** remove top allignment **/
+  }
+
+  .lottie-overlay {
+    width: 150px;
+    height: 150px;
+  }
+}
