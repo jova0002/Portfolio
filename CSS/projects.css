@@ -277,3 +277,13 @@
     padding-right: 85px;
   }
 }
+
+/** pic hover **/
+
+.topic-pics {
+  transition: transform 0.3s ease;
+}
+
+.topic-pics:hover {
+  transform: scale(1.1); /* Slightly enlarge the image */
+}

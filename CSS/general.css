@@ -207,6 +207,7 @@ nav {
 
   nav.active .menu a {
     font-size: 24px;
+    margin-right: 140px;
   }
   .nav-link {
     text-decoration: none;
@@ -219,11 +220,11 @@ nav {
 
   .nav-link.active::after {
     content: "";
-    display: block;
+    display: none;
     width: 100%;
     height: 3px;
     border-radius: 60px;
-    background-color: #0000ff;
+    background-color: #f9f93e;
     position: absolute;
     bottom: 0;
     left: 0;
@@ -233,6 +234,13 @@ nav {
     width: 70px;
     height: 70px;
     margin-left: 60px;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  nav.active .menu a {
+    font-size: 24px;
+    margin-right: 0px;
   }
 }
 

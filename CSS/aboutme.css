@@ -55,6 +55,7 @@
   .front-txt {
     grid-column: 1/2;
     margin-top: -40px;
+    margin-right: 10px;
   }
 
   .frontpage-h1 {
@@ -109,6 +110,11 @@
     font-family: "Nunito Sans", serif;
     font-weight: 100;
     margin-top: 30px;
+  }
+  .front-txt {
+    grid-column: 1/2;
+    margin-top: -40px;
+    margin-right: 0px;
   }
 }
 
@@ -373,8 +379,6 @@ textarea {
   }
 }
 
-/** lottie **/
-
 /* Ensure the container sets relative positioning */
 .image-container {
   position: relative;
@@ -390,6 +394,11 @@ textarea {
   width: 100%; /* Make it responsive */
   height: auto;
   margin-top: 40px;
+  transition: transform 0.3s ease;
+}
+
+.background-image:hover {
+  transform: scale(1.1); /* Slightly enlarge the image */
 }
 
 @media screen and (min-width: 600px) {
@@ -417,6 +426,7 @@ textarea {
     height: auto;
     padding-left: 0px;
     padding-right: 0px;
+    margin-top: 0px;
   }
 }
 
@@ -504,4 +514,80 @@ textarea {
 /** trigger animation **/
 .skill-container.is-visible .skill {
   width: var(--target-width);
+}
+
+/** lottie **/
+
+/* @media screen and (min-width: 900px) {
+  .lottie-file {
+    position: none;
+  }
+} */
+
+/* @media screen and (max-width: 900px) {
+  element {
+    width: 60%;
+    height: 89%;
+    transform: translate3d(0px, 0px, 0px);
+    content-visibility: visible;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+}
+
+element {
+  width: 42%;
+  height: 69%;
+  transform: translate3d(0px, 0px, 0px);
+  content-visibility: visible;
+  border: none;
+} */
+
+/** hover **/
+
+/* .doodle-moi {
+  transition: transform 0.3s ease;
+}
+
+.doodle-moi:hover {
+  transform: scale(1.1); /* Slightly enlarge the image */
+
+/** star pic **/
+
+.star-pic {
+  position: absolute; /* Place the image relative to the container */
+  top: 48%; /* Center the image vertically */
+  left: 15%; /* Center the image horizontally */
+  transform: translate(-50%, -50%); /* Align the center of the image with the center of the container */
+  width: 100px; /* Set image size (adjust as needed) */
+  z-index: -1; /* Push the image behind the text */
+  padding-bottom: 470px;
+}
+
+@media screen and (min-width: 600px) {
+  .star-pic {
+    top: 48%; /* Center the image vertically */
+    left: 26%; /* Center the image horizontally */
+    width: 100px; /* Set image size (adjust as needed) */
+    padding-bottom: 82px;
+  }
+}
+
+@media screen and (min-width: 900px) {
+  .star-pic {
+    top: 60%; /* Center the image vertically */
+    left: 20%; /* Center the image horizontally */
+    width: 100px; /* Set image size (adjust as needed) */
+    padding-bottom: 270px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .star-pic {
+    top: 62%; /* Center the image vertically */
+    left: 14%; /* Center the image horizontally */
+    width: 132px; /* Set image size (adjust as needed) */
+    padding-bottom: 270px;
+  }
 }

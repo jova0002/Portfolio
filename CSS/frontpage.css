@@ -49,6 +49,11 @@
 
 .me-pic {
   margin-top: 20px;
+  transition: transform 0.3s ease;
+}
+
+.me-pic:hover {
+  transform: scale(1.1); /* Slightly enlarge the image */
 }
 
 @media screen and (min-width: 600px) {
@@ -348,6 +353,14 @@
 .button-project-see-all {
   margin-top: 60px;
   margin-bottom: 40px;
+}
+
+.topic-pics {
+  transition: transform 0.3s ease;
+}
+
+.topic-pics:hover {
+  transform: scale(1.1); /* Slightly enlarge the image */
 }
 
 @media screen and (min-width: 900px) {
