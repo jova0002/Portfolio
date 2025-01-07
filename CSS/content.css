@@ -690,3 +690,20 @@
     margin-top: 0px;
   }
 }
+
+/** a-txt **/
+
+.a-txt {
+  font-size: 100%;
+  line-height: 150%;
+  color: #ae030e;
+  font-family: "Nunito Sans", serif;
+  font-weight: 100;
+  margin-top: 35px;
+  transition: color 0.3s ease;
+}
+
+.a-txt:hover {
+  color: #b0ae33;
+  text-decoration: underline;
+}
